@@ -1,0 +1,6 @@
+test_user_login:
+  url: "http://115.28.108.130:5000/api/user/login/"
+  method: "POST"
+  data_type: "FORM"
+  args: {"name": "张三","password":"123456"}
+  expect_res: "登录成功"  
