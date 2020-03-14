@@ -25,7 +25,7 @@ def parse_smtp_uri(conf_uri):
 class Email:
     def __init__(self,smtp_conf=None):
         #self.smtp_conf = smtp_conf or parse_smtp_uri(os.getenv('SMTP_URI'))
-        self.smtp_conf = smtp_conf or parse_smtp_uri('smtp_ssl://297219420:lhhhgcnjkovgbjfj@smtp.qq.com:25')
+        self.smtp_conf = smtp_conf or parse_smtp_uri('smtp_ssl://username:password@smtp.qq.com:25')
         self.msg = MIMEMultipart()
         self.smtp = None
 
